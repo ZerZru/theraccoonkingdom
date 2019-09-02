@@ -7,6 +7,8 @@ def get_text_messages(message):
         bot.send_message(message.from_user.id, 'Привет, чем я могу тебе помочь?')
     elif message.text == "/help":
         bot.send_message(message.from_user.id, 'Напиши: "привет"')
+    elif message.text == "Пока":
+        bot.send_message(message.from_user.id, 'Досвиданья, увидимся ещё!')
     else:
         bot.send_message(message.from_user.id, 'Я тебя не понимаю. Напиши /help')
 
