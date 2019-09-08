@@ -1,0 +1,9 @@
+{
+	"name": "TheRaccoonKingdom",
+    "repository": "https://github.com/ZerZru/theraccoonkingdom.git",
+    "author": "Elisei Sharov",
+    "license": "MIT",
+    "scripts": {
+        "start": "python bot.py"
+    }
+}

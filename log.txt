@@ -1,0 +1,122 @@
+[SUCCESS][04-09-2019 20:19:47]: UserWroted: "/hack 123"; BotReplied: 'TakedTime';
+[SUCCESS][04-09-2019 20:22:17]: UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:24:46]: UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:24:50]: UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][04-09-2019 20:25:35]: Error: name 'a' is not defined
+[ERROR][04-09-2019 20:25:53]: Error: name 'a' is not defined
+[SUCCESS][04-09-2019 20:25:57]: UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:26:49]: UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:26:52]: UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:27:19]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:33:34]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][04-09-2019 20:36:46]: Error: local variable 'quest' referenced before assignment
+[ERROR][04-09-2019 20:38:13]: Error: local variable 'quest' referenced before assignment
+[ERROR][04-09-2019 20:38:36]: Error: local variable 'quest' referenced before assignment
+[SUCCESS][04-09-2019 20:39:17]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:39:54]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:40:13]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:41:26]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:45:31]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:45:54]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:47:22]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:49:07]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:49:39]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][04-09-2019 20:56:18]: Error: invalid literal for int() with base 10: '04-09-2019 20:56:18'
+[SUCCESS][04-09-2019 20:57:00]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 20:57:42]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][04-09-2019 21:01:18]: Error: local variable 'quest' referenced before assignment
+[SUCCESS][04-09-2019 21:03:00]: UserId: 835202770, UserWroted: "/hack 454410103"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 21:04:50]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][04-09-2019 21:05:00]: Error: 'str' object has no attribute 'data'
+[SUCCESS][04-09-2019 21:05:53]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][04-09-2019 21:06:02]: UserId: 835202770, UserWroted: "/hack 454410103"; BotReplied: "TakedTime";
+[ERROR][04-09-2019 22:18:33]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][05-09-2019 05:49:05]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[SUCCESS][05-09-2019 05:51:55]: UserId: 835202770, UserWroted: "/hack 645816332"; BotReplied: "TakedTime";
+[ERROR][05-09-2019 06:16:43]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][05-09-2019 06:16:44]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[SUCCESS][05-09-2019 06:18:11]: UserId: 835202770, UserWroted: "/hack 75002629"; BotReplied: "TakedTime";
+[ERROR][05-09-2019 09:18:30]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][05-09-2019 12:49:24]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][05-09-2019 12:49:34]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][05-09-2019 12:50:00]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][05-09-2019 14:29:44]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][05-09-2019 16:11:01]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][05-09-2019 16:18:30]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][05-09-2019 16:18:33]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][05-09-2019 17:45:32]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][05-09-2019 18:26:56]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[SUCCESS][05-09-2019 18:43:36]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][05-09-2019 18:43:44]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][05-09-2019 18:43:56]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][05-09-2019 18:58:28]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[SUCCESS][05-09-2019 21:58:33]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][05-09-2019 21:58:35]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 15:55:51]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][06-09-2019 15:55:55]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][06-09-2019 15:55:59]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[SUCCESS][06-09-2019 15:56:30]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][06-09-2019 15:56:30]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][06-09-2019 15:56:30]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][06-09-2019 15:58:24]: UserId: 835202770, UserWroted: "/hack 602178952"; BotReplied: "TakedTime";
+[SUCCESS][06-09-2019 16:00:41]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][06-09-2019 16:55:02]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][06-09-2019 17:06:44]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 17:06:59]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 17:08:38]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 17:39:09]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][06-09-2019 17:39:29]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 19:37:23]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][06-09-2019 19:41:52]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][06-09-2019 19:42:27]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 20:18:41]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][06-09-2019 20:19:21]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[SUCCESS][06-09-2019 20:32:44]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][06-09-2019 20:33:09]: UserId: 835202770, UserWroted: "/hack 75002629"; BotReplied: "TakedTime";
+[SUCCESS][06-09-2019 20:35:15]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[SUCCESS][06-09-2019 20:38:18]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][06-09-2019 20:43:43]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 20:44:54]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 20:46:08]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 20:46:16]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 20:46:19]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 20:46:20]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 21:08:20]: Error: [Errno 2] No such file or directory: '213.json'
+[ERROR][06-09-2019 21:08:32]: Error: [Errno 2] No such file or directory: '321.json'
+[ERROR][06-09-2019 21:12:56]: Error: [Errno 2] No such file or directory: '12.json'
+[ERROR][06-09-2019 21:16:08]: Error: local variable 'data' referenced before assignment
+[SUCCESS][06-09-2019 21:16:34]: UserId: 835202770, UserWroted: "/hack 123"; BotReplied: "TakedTime";
+[ERROR][06-09-2019 21:20:34]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][06-09-2019 21:22:31]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 21:22:39]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 21:22:47]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][06-09-2019 22:06:29]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][07-09-2019 12:41:34]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][07-09-2019 13:07:56]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][07-09-2019 13:30:55]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[SUCCESS][07-09-2019 13:44:17]: UserId: 835202770, UserWroted: "/hack 258007505"; BotReplied: "TakedTime";
+[ERROR][07-09-2019 14:20:54]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][07-09-2019 14:22:12]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[ERROR][07-09-2019 15:14:04]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][07-09-2019 15:58:17]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[SUCCESS][07-09-2019 16:18:46]: UserId: 835202770, UserWroted: "/hack"; BotReplied: "TakedTime";
+[ERROR][07-09-2019 16:25:01]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[SUCCESS][07-09-2019 16:25:58]: UserId: 835202770, UserWroted: "/hack"; BotReplied: "TakedTime";
+[SUCCESS][07-09-2019 16:26:37]: UserId: 835202770, UserWroted: "/hack"; BotReplied: "TakedTime";
+[SUCCESS][07-09-2019 16:27:31]: UserId: 835202770, UserWroted: "/hack"; BotReplied: "TakedTime";
+[ERROR][07-09-2019 17:06:28]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[SUCCESS][07-09-2019 17:26:58]: UserId: 835202770, UserWroted: "/hack 675078522"; BotReplied: "TakedTime";
+[SUCCESS][07-09-2019 17:27:15]: UserId: 835202770, UserWroted: "/hack 454410103"; BotReplied: "TakedTime";
+[SUCCESS][07-09-2019 17:28:44]: UserId: 835202770, UserWroted: "/hack 602178952"; BotReplied: "TakedTime";
+[ERROR][07-09-2019 17:37:47]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[ERROR][07-09-2019 21:17:41]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[SUCCESS][07-09-2019 21:18:14]: UserId: 454410103, UserWroted: "/hack 241564735"; BotReplied: "TakedTime";
+[SUCCESS][07-09-2019 21:18:14]: UserId: 454410103, UserWroted: "/hack 241564735"; BotReplied: "TakedTime";
+[SUCCESS][07-09-2019 21:18:17]: UserId: 835202770, UserWroted: "/hack 241564735"; BotReplied: "TakedTime";
+[ERROR][07-09-2019 21:18:57]: Error: ('Connection aborted.', ConnectionResetError(10054, 'Удаленный хост принудительно разорвал существующее подключение', None, 10054, None))
+[SUCCESS][07-09-2019 21:21:20]: UserId: 835202770, UserWroted: "/hack 241564735"; BotReplied: "TakedTime";
+[SUCCESS][07-09-2019 21:31:41]: UserId: 835202770, UserWroted: "/hack 241564735"; BotReplied: "TakedTime";
+[SUCCESS][07-09-2019 21:31:41]: UserId: 835202770, UserWroted: "/hack 602178952"; BotReplied: "TakedTime";
+[SUCCESS][07-09-2019 21:49:14]: UserId: 835202770, UserWroted: "/hack 602178952"; BotReplied: "TakedTime";
+[ERROR][07-09-2019 21:50:53]: Error: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=30)
+[SUCCESS][07-09-2019 21:50:57]: UserId: 835202770, UserWroted: "/hack 602178952"; BotReplied: "TakedTime";
