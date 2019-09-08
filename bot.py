@@ -4,7 +4,7 @@ import time
 import requests
 import telebot
 from datetime import datetime
-bot = telebot.TeleBot('936408429:AAHPnUciPGHZJVDsNKMFuWgwcb2Fa6CnfNk')
+bot = telebot.TeleBot('936408429:AAGyK8OCa_YLIYIcJowO7yNWvDzvHZ_Tafc')
 
 try:
     print('Приложение успешно запущено')
@@ -41,7 +41,7 @@ try:
                 try:
                     uname = data['data']['username'];
                 except:
-                    uname = '👤Безликий'
+                    uname = 'Неизвестно'
                 unamet = data['data']['firstName'];
                 unametl = data['data']['lastName']
                 chaos = data['data']['chaos']
@@ -141,8 +141,8 @@ try:
                 endurance_u = int(endurance_u)
                 endurance_m = int(endurance_m)
                 luck_u = int(luck_u)
-                damage_min = str(damage_min)
-                damage_max = str(damage_max)
+                damage_min = int(damage_min)
+                damage_max = int(damage_max)
                 defense = str(defense)
                 dodge = str(dodge)
                 critical = str(critical)
@@ -150,14 +150,14 @@ try:
                 power = str(power)
                 antidodge = str(antidodge)
                 anticritical = str(anticritical)
-                m_sword = str(m_sword)
-                m_axe = str(m_axe)
-                m_spear = str(m_spear)
-                m_hammer = str(m_hammer)
-                m_knife = str(m_knife)
-                m_animal = str(m_animal)
+                m_sword = int(m_sword)
+                m_axe = int(m_axe)
+                m_spear = int(m_spear)
+                m_hammer = int(m_hammer)
+                m_knife = int(m_knife)
+                m_animal = int(m_animal)
                 rating = str(rating)
-                wins = str(wins)
+                wins = int(wins)
                 draws = int(draws)
                 loses = int(loses)
                 ratingstatus = str(ratingstatus)
