@@ -7,15 +7,31 @@ from datetime import datetime
 bot = telebot.TeleBot('936408429:AAGyK8OCa_YLIYIcJowO7yNWvDzvHZ_Tafc')
 
 try:
+    start = time.time()
     print('Приложение успешно запущено')
     @bot.message_handler(content_types=['text'])
     def get_text_messages(message):
-        start = time.time()
-        if message.text == "/help":
+        if message.text == '/help':
             bot.send_message(message.from_user.id, 'Позже ты всё узнаешь')
             last_bot_message = 'Help'
-        if message.text == "/lol":
-            bot.send_message(message.from_user.id, 'Кек')
+        elif message.text == '/changelog':
+            bot.send_message(message.from_user.id,
+            '''
+Список изменений @TheRaccoonKingdomBot от @zerzru:
+Версия 1.0.0 - базовая работа программы. Работает только на сайте
+Версия 1.0.1 - Исправлены некоторые баги. Убран код доступа. Удалена библиотека игроков
+Версия 1.0.2 - исправления багов с навыками
+Версия 1.0.3 - добавление математики. Расчёт бонусов от некоторых вещей
+Версия 1.0.4 - исправление багов с именем
+Версия 1.1.0 - перенос программы в бота
+Версия 1.1.1 - ускорение работы
+Версия 1.1.2 - исправление багов
+Версия 1.1.3 - исправление багов
+Версия 1.1.4 - исправление багов
+Версия 1.1.5 - добавление "Безликости"
+Версия 1.1.6 - исправление багов с юзернеймом
+            ''')
+            last_bot_message == 'Changelog'
 
         if '/hack' in message.text:
             bot.send_message(message.from_user.id, 'Получение данных...')
@@ -324,12 +340,11 @@ try:
                 if unametl == None:
                     unametl = '';
 
-                if ratingstatus==None :
+                if ratingstatus==None:
                     ratingstatus='Отсутствует'
 
-#                    if name == None:
-#                        name = '@' + uname
-                uname = '👤Безликий'
+                if name == None:
+                    name = '@' + uname
 
                 bot.send_message(message.from_user.id, 'Соединение данных...')
                 last_bot_message = 'ComplinigData'
@@ -460,7 +475,7 @@ try:
                            ahlth)
 
                 p9 = '''
-Версия 1.1.5
+Версия 1.1.6
                 '''
 
                 answer = p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9
