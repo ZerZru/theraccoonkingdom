@@ -33,7 +33,7 @@ try:
             ''')
             last_bot_message == 'Changelog'
 
-        if '/hack' in message.text:
+        elif '/hack' in message.text:
             bot.send_message(message.from_user.id, 'Получение данных...')
             last_bot_message = 'GettingData'
             vid = message.text
