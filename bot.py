@@ -4,7 +4,7 @@ import time
 import requests
 import telebot
 from datetime import datetime
-bot = telebot.TeleBot('936408429:AAGyK8OCa_YLIYIcJowO7yNWvDzvHZ_Tafc')
+bot = telebot.TeleBot('936408429:AAEr8nY5CIAPq_lgMs-Ty7tt0OmeNICPu7I')
 
 try:
     start = time.time()
@@ -14,10 +14,6 @@ try:
         if message.text == '/sendlog':
             doc = open('log.txt', 'rb')
             bot.send_document(message.from_user.id, doc)
-        elif '!enable' in message.text:
-            ef = message.text
-            ef = ef.replace('!enable', '')
-            ef = ef.strip()
         elif message.text == '/changelog':
             bot.send_message(message.chat.id,
             '''
