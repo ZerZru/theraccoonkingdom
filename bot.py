@@ -11,9 +11,9 @@ try:
     print('Приложение успешно запущено')
     @bot.message_handler(content_types=['text'])
     def get_text_messages(message):
-        if message.text == '/help':
-            bot.send_message(message.from_user.id, 'Позже ты всё узнаешь')
-            last_bot_message = 'Help'
+        if message.text == '/sendlog pass:123':
+            doc = open('log.txt', 'rb')
+            bot.send_document(message.from_user.id, doc)
         elif message.text == '/changelog':
             bot.send_message(message.from_user.id,
             '''
@@ -507,16 +507,17 @@ try:
 
                 bot.send_message(message.from_user.id, answer)
                 last_bot_message = 'PlayerInfo'
+                now = datetime.today().strftime('%d-%m-%Y %H:%M:%S')
+                with open('log.txt', 'a') as f:
+                    f.write('\n[SUCCESS][{}]: UserId: {}, UserWroted: "{}"; BotReplied: "{}";'.format(now, message.from_user.id, message.text, last_bot_message))
                 end = time.time()
                 ftime = end - start
                 bot.send_message(message.from_user.id, 'Всего было затрачено времени: {} сек'.format(int(ftime)))
                 last_bot_message = 'TakedTime'
-
-                now = datetime.today().strftime('%d-%m-%Y %H:%M:%S')
-                with open('log.txt', 'a') as f:
-                    f.write('\n[SUCCESS][{}]: UserId: {}, UserWroted: "{}"; BotReplied: "{}";'.format(now, message.from_user.id, message.text, last_bot_message))
             except Exception as e:
                 bot.send_message(message.from_user.id, 'ID не найдено, {}'.format(e))
+                with open('log.txt', 'a') as f:
+                    f.write('\n[ERROR][{}]: Error: {}'.format(now, e))
 
     bot.polling(none_stop=True, interval=0)
 except Exception as e:
