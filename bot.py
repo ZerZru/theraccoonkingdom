@@ -11,11 +11,15 @@ try:
     print('Приложение успешно запущено')
     @bot.message_handler(content_types=['text'])
     def get_text_messages(message):
-        if message.text == '/sendlog pass:123':
+        if message.text == '/sendlog':
             doc = open('log.txt', 'rb')
             bot.send_document(message.from_user.id, doc)
+        elif '!enable' in message.text:
+            ef = message.text
+            ef = ef.replace('!enable', '')
+            ef = ef.strip()
         elif message.text == '/changelog':
-            bot.send_message(message.from_user.id,
+            bot.send_message(message.chat.id,
             '''
 Список изменений @TheRaccoonKingdomBot от @zerzru:
 Версия 1.1.7 - добавление значений "Заблокирован", "Забанен" и "Удалён"
@@ -38,12 +42,7 @@ try:
             bot.send_message(message.from_user.id, 'Получение данных...')
             last_bot_message = 'GettingData'
             vid = message.text
-            vid = vid.replace('/', '')
-            vid = vid.replace('h', '')
-            vid = vid.replace('a', '')
-            vid = vid.replace('c', '')
-            vid = vid.replace('k', '')
-            vid = vid.replace(' ', '')
+            vid = vid.replace('/hack', '')
             vid = vid.strip()
 
             try:
