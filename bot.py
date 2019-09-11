@@ -42,7 +42,7 @@ try:
             vid = vid.replace('a', '')
             vid = vid.replace('c', '')
             vid = vid.replace('k', '')
-            vid = vid.replace(' ', '')
+            vid = vid.strip()
 
             try:
                 r = requests.get('https://sparta-game-bot.herokuapp.com/api/heroes/{}'.format(vid))
@@ -61,6 +61,9 @@ try:
                 unamet = data['data']['firstName'];
                 unametl = data['data']['lastName']
                 chaos = data['data']['chaos']
+                banned = data['data']['banned']
+                blocked = data['data']['blocked']
+                deleted = data['data']['deleted']
 
                 #animal
                 aname = data['data']['animal']['name']
@@ -183,6 +186,19 @@ try:
                 experience_max = str(experience_max)
                 vampirism = str(vampirism)
                 blessing = str(blessing)
+
+                if(banned==True):
+                    banned = 'Да'
+                else:
+                    banned = 'Нет'
+                if(blocked==True):
+                    blocked = 'Да'
+                else:
+                    blocked = 'Нет'
+                if(deleted==True):
+                    deleted = 'Да'
+                else:
+                    deleted = 'Нет'
 
                 n = 0
                 effects = {}
@@ -357,10 +373,17 @@ try:
 
 👿 Хаос ‒ {}%
 🏅 Очков зала славы: {}
+
+Забанен: {}
+Заблокирован: {}
+Удалён: {}
                 '''.format(clan, name, level, health, uname,
                            unamet, unametl,
                            chaos,
-                           honor)
+                           honor,
+                           banned,
+                           blocked,
+                           deleted)
 
                 p2 = '''
 💪 Сила: {} ({}+{})
