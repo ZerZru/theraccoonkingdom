@@ -511,6 +511,7 @@ try:
                 last_bot_message = 'TakedTime'
             except Exception as e:
                 bot.send_message(message.from_user.id, 'ID не найдено, {}'.format(e))
+                now = datetime.today().strftime('%d-%m-%Y %H:%M:%S')
                 with open('log.txt', 'a') as f:
                     f.write('\n[ERROR][{}]: Error: {}'.format(now, e))
 
