@@ -42,6 +42,7 @@ try:
             vid = vid.replace('a', '')
             vid = vid.replace('c', '')
             vid = vid.replace('k', '')
+            vid = vid.replace(' ', '')
             vid = vid.strip()
 
             try:
@@ -374,9 +375,9 @@ try:
 👿 Хаос ‒ {}%
 🏅 Очков зала славы: {}
 
-Забанен: {}
-Заблокирован: {}
-Удалён: {}
+⛔ Забанен: {}
+♿ Заблокирован: {}
+👻 Удалён: {}
                 '''.format(clan, name, level, health, uname,
                            unamet, unametl,
                            chaos,
