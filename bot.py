@@ -7,10 +7,10 @@ from datetime import datetime
 bot = telebot.TeleBot('936408429:AAEr8nY5CIAPq_lgMs-Ty7tt0OmeNICPu7I')
 
 try:
-    start = time.time()
     print('Приложение успешно запущено')
     @bot.message_handler(content_types=['text'])
     def get_text_messages(message):
+        start = time.time()
         if message.text == '/sendlog':
             doc = open('log.txt', 'rb')
             bot.send_document(message.from_user.id, doc)
