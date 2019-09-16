@@ -49,7 +49,8 @@ try:
 🎩 ♤Волк♤
 🏰⚜️ Jack
 
-Остальные - враги(исключение - 🦅 Олимп и 🌓 BerserksWarSong)''')
+Остальные - враги(исключение - 🦅 Олимп и 🌓 BerserksWarSong)
+        ''')
     
     @bot.message_handler(content_types=['text'])
     def get_text_messages(message):
@@ -391,13 +392,13 @@ try:
                 skillsreset = data['data']['freeSkillsReset']
                 capacity = capacity + bag_e
 
-                if unametl == None:
+                if unametl is None:
                     unametl = '';
 
-                if ratingstatus==None:
+                if ratingstatus is None:
                     ratingstatus='Отсутствует'
 
-                if name == None:
+                if name is None:
                     name = '@' + uname
 
                 bot.send_message(message.chat.id, 'Соединение данных...')
