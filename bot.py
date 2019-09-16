@@ -183,6 +183,12 @@ try:
                 if name is None:
                     name = '@' + uname
 
+                if uname is None:
+                    uname = 'Неизвестно'
+
+                if name is None and uname is None:
+                    name = unamet
+
                 name = str(name)
                 level = str(level)
                 clan = str(clan)
