@@ -181,14 +181,15 @@ try:
                     ratingstatus='Отсутствует'
 
                 if name is None:
-                    uname = str(uname)
-                    name = '@' + uname
+                    if uname is None:
+                        unamet = str(unamet)
+                        name = unamet
+                    else:
+                        uname = str(uname)
+                        name = '@' + uname
 
                 if uname is None:
                     uname = 'Неизвестно'
-
-                if name is None and uname is None:
-                    name = unamet
 
                 name = str(name)
                 level = str(level)
