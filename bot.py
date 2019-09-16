@@ -8,16 +8,12 @@ bot = telebot.TeleBot('936408429:AAEr8nY5CIAPq_lgMs-Ty7tt0OmeNICPu7I')
 
 try:
     print('Приложение успешно запущено')
-    @bot.message_handler(content_types=['text'])
-    def get_text_messages(message):
-        start = time.time()
-        if message.text == '/sendlog':
-            doc = open('log.txt', 'rb')
-            bot.send_document(message.chat.id, doc)
-        elif message.text == '/changelog':
-            bot.send_message(message.chat.id,
-            '''
+    @bot.message_handler(commands=['changelog'])
+    def send_changelog():
+        bot.send_message(message.chat.id,
+        '''
 Список изменений @TheRaccoonKingdomBot от @zerzru:
+Версия 1.1.8 - добавление возможности ответа в группе, добавление команды /policy и исправление бага NoneType
 Версия 1.1.7 - добавление значений "Заблокирован", "Забанен" и "Удалён"
 Версия 1.1.6 - исправление багов с юзернеймом
 Версия 1.1.5 - добавление "Безликости"
@@ -31,8 +27,36 @@ try:
 Версия 1.0.2 - исправления багов с навыками
 Версия 1.0.1 - Исправлены некоторые баги. Убран код доступа. Удалена библиотека игроков
 Версия 1.0.0 - базовая работа программы. Работает только на сайте
-            ''')
-            last_bot_message = 'Changelog'
+        ''')
+        last_bot_message = 'Changelog'
+
+    @bot.message_handler(commands=['policy'])
+    def send_policy():
+        bot.send_message(message.chat.id, '''
+Список союзников:
+
+Кланы:
+🔮 BeZpRiDeLi
+🗽 YANTARNE
+🏴‍☠️ Пираты
+🔱 ScarlettWarriors
+👻 Призракисмерти
+🏆🏀AsskickersUnited
+
+Игроки:
+🖤 Николаф
+🎩 DRaGo
+🎩 ♤Волк♤
+🏰⚜️ Jack
+
+Остальные - враги(исключение - 🦅 Олимп и 🌓 BerserksWarSong)''')
+    
+    @bot.message_handler(content_types=['text'])
+    def get_text_messages(message):
+        start = time.time()
+        if message.text == '/sendlog':
+            doc = open('log.txt', 'rb')
+            bot.send_document(message.chat.id, doc)
 
         elif '/hack' in message.text:
             bot.send_message(message.chat.id, 'Получение данных...')
@@ -48,9 +72,12 @@ try:
                 #general
                 name = data['data']['customName'];
                 level = data['data']['stats']['level'];
-                clan = data['data']['clan']['icon'];
+                try:
+                    clan = data['data']['clan']['icon'];
+                except:
+                    clan = ''
                 health = data['data']['values']['maxHealth'];
-                uID = data['data']['animal']['userId'];
+                uID = data['data']['userId'];
                 try:
                     uname = data['data']['username'];
                 except:
@@ -63,14 +90,24 @@ try:
                 deleted = data['data']['deleted']
 
                 #animal
-                aname = data['data']['animal']['name']
-                atype = data['data']['animal']['icon']
-                ahlth = data['data']['animal']['maxHealth']
-                admg_min = data['data']['animal']['minDamage']
-                admg_max = data['data']['animal']['maxDamage']
-                aexp = data['data']['animal']['experience']
-                aexp_max = data['data']['animal']['experienceMax']
-                alvl = data['data']['animal']['level']
+                try:
+                    aname = data['data']['animal']['name']
+                    atype = data['data']['animal']['icon']
+                    ahlth = data['data']['animal']['maxHealth']
+                    admg_min = data['data']['animal']['minDamage']
+                    admg_max = data['data']['animal']['maxDamage']
+                    aexp = data['data']['animal']['experience']
+                    aexp_max = data['data']['animal']['experienceMax']
+                    alvl = data['data']['animal']['level']
+                except:
+                    aname = '[-]'
+                    atype = '[-]'
+                    ahlth = '[-]'
+                    admg_min = '[-]'
+                    admg_max = '[-]'
+                    aexp = '[-]'
+                    aexp_max = '[-]'
+                    alvl = '[-]'
 
                 #skills
                 strength_u = data['data']['skills']['strength']
