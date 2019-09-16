@@ -181,6 +181,7 @@ try:
                     ratingstatus='Отсутствует'
 
                 if name is None:
+                    uname = str(uname)
                     name = '@' + uname
 
                 if uname is None:
