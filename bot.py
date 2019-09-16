@@ -13,11 +13,12 @@ try:
         start = time.time()
         if message.text == '/sendlog':
             doc = open('log.txt', 'rb')
-            bot.send_document(message.from_user.id, doc)
+            bot.send_document(message.chat.id, doc)
         elif message.text == '/changelog':
             bot.send_message(message.chat.id,
             '''
 Список изменений @TheRaccoonKingdomBot от @zerzru:
+Версия 1.1.8 - добавление возможности ответа в группе
 Версия 1.1.7 - добавление значений "Заблокирован", "Забанен" и "Удалён"
 Версия 1.1.6 - исправление багов с юзернеймом
 Версия 1.1.5 - добавление "Безликости"
@@ -35,7 +36,7 @@ try:
             last_bot_message == 'Changelog'
 
         elif '/hack' in message.text:
-            bot.send_message(message.from_user.id, 'Получение данных...')
+            bot.send_message(message.chat.id, 'Получение данных...')
             last_bot_message = 'GettingData'
             vid = message.text
             vid = vid.replace('/hack', '')
@@ -129,7 +130,7 @@ try:
                 fights = wins + loses + draws
                 honor = int(level / 2 * 100 * ((wins - loses + 1) / (wins + loses) + (draws / (2 * fights))))  
 
-                bot.send_message(message.from_user.id, 'Обработка данных...')
+                bot.send_message(message.chat.id, 'Обработка данных...')
                 last_bot_message = 'FiguringOutData'
 
                 name = str(name)
@@ -359,7 +360,7 @@ try:
                 if name == None:
                     name = '@' + uname
 
-                bot.send_message(message.from_user.id, 'Соединение данных...')
+                bot.send_message(message.chat.id, 'Соединение данных...')
                 last_bot_message = 'ComplinigData'
 
                 p1 = '''
@@ -495,26 +496,26 @@ try:
                            ahlth)
 
                 p9 = '''
-Версия 1.1.7
+Версия 1.1.8
                 '''
 
                 answer = p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9
 
-                bot.send_message(message.from_user.id, answer)
+                bot.send_message(message.chat.id, answer)
                 last_bot_message = 'PlayerInfo'
                 now = datetime.today().strftime('%d-%m-%Y %H:%M:%S')
                 with open('log.txt', 'a') as f:
-                    f.write('\n[SUCCESS][{}]: UserId: {}, UserWroted: "{}"; BotReplied: "{}";'.format(now, message.from_user.id, message.text, last_bot_message))
+                    f.write('\n[SUCCESS][{}]: UserId: {}, UserWroted: "{}"; BotReplied: "{}";'.format(now, message.chat.id, message.text, last_bot_message))
                 end = time.time()
                 ftime = end - start
-                bot.send_message(message.from_user.id, 'Всего было затрачено времени: {} сек'.format(int(ftime)))
+                bot.send_message(message.chat.id, 'Всего было затрачено времени: {} сек'.format(int(ftime)))
                 last_bot_message = 'TakedTime'
             except Exception as e:
-                bot.send_message(message.from_user.id, 'ID не найдено, {}'.format(e))
+                bot.send_message(message.chat.id, 'ID не найдено, {}'.format(e))
                 now = datetime.today().strftime('%d-%m-%Y %H:%M:%S')
                 with open('log.txt', 'a') as f:
                     f.write('\n[ERROR][{}]: Error: {}'.format(now, e))
-
+                    
     bot.polling(none_stop=True, interval=0)
 except Exception as e:
     now = datetime.today().strftime('%d-%m-%Y %H:%M:%S')
