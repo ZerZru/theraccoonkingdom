@@ -13,7 +13,7 @@ try:
         bot.send_message(message.chat.id,
         '''
 Список изменений @TheRaccoonKingdomBot от @zerzru:
-Версия 1.1.8 - добавление возможности ответа в группе, добавление команды /policy и исправление бага NoneType
+Версия 1.1.8 - добавление возможности ответа в группе, добавление команды /policy, исправление бага NoneType и поддержка ссылок на профиль игрока
 Версия 1.1.7 - добавление значений "Заблокирован", "Забанен" и "Удалён"
 Версия 1.1.6 - исправление багов с юзернеймом
 Версия 1.1.5 - добавление "Безликости"
@@ -63,6 +63,10 @@ try:
             last_bot_message = 'GettingData'
             vid = message.text
             vid = vid.replace('/hack', '')
+            try:
+                vid = vid.replace('https://spartagame.ru/heroes/', '')
+            except:
+                print('')
             vid = vid.strip()
 
             try:
@@ -532,7 +536,7 @@ try:
                            ahlth)
 
                 p9 = '''
-Версия 1.1.7
+Версия 1.1.8
                 '''
 
                 answer = p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9
