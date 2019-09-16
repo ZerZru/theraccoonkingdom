@@ -9,7 +9,7 @@ bot = telebot.TeleBot('936408429:AAEr8nY5CIAPq_lgMs-Ty7tt0OmeNICPu7I')
 try:
     print('Приложение успешно запущено')
     @bot.message_handler(commands=['changelog'])
-    def send_changelog():
+    def send_changelog(message):
         bot.send_message(message.chat.id,
         '''
 Список изменений @TheRaccoonKingdomBot от @zerzru:
@@ -31,7 +31,7 @@ try:
         last_bot_message = 'Changelog'
 
     @bot.message_handler(commands=['policy'])
-    def send_policy():
+    def send_policy(message):
         bot.send_message(message.chat.id, '''
 Список союзников:
 
