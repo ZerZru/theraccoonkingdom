@@ -174,6 +174,15 @@ try:
                 bot.send_message(message.chat.id, 'Обработка данных...')
                 last_bot_message = 'FiguringOutData'
 
+                if unametl is None:
+                    unametl = '';
+
+                if ratingstatus is None:
+                    ratingstatus='Отсутствует'
+
+                if name is None:
+                    name = '@' + uname
+
                 name = str(name)
                 level = str(level)
                 clan = str(clan)
@@ -391,15 +400,6 @@ try:
 
                 skillsreset = data['data']['freeSkillsReset']
                 capacity = capacity + bag_e
-
-                if unametl is None:
-                    unametl = '';
-
-                if ratingstatus is None:
-                    ratingstatus='Отсутствует'
-
-                if name is None:
-                    name = '@' + uname
 
                 bot.send_message(message.chat.id, 'Соединение данных...')
                 last_bot_message = 'ComplinigData'
