@@ -237,8 +237,6 @@ try:
                 loses = int(loses)
                 ratingstatus = str(ratingstatus)
                 experience = str(experience)
-                experience_stage = str(experience_stage)
-                experience_stage_n = str(experience_stage_n)
                 experience_max = str(experience_max)
                 vampirism = str(vampirism)
                 blessing = str(blessing)
@@ -468,7 +466,7 @@ try:
                     blessing,
                     vampirism)
 
-                if(experience_stage_n == 4):
+                if(experience_stage_n >= 3):
                     p4 = '''
 🌟 Опыт: {} / {}
 💟 Склонность: В поиске...
@@ -549,6 +547,9 @@ try:
                 '''
 
                 answer = p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9
+
+                with open('{}.txt'.format(vid), 'w') as f:
+                    f.write(answer)
 
                 bot.send_message(message.chat.id, answer)
                 last_bot_message = 'PlayerInfo'
